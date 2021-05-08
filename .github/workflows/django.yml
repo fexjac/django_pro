@@ -18,6 +18,7 @@ jobs:
     - name: Instalar Dependências
       run: |
         pip install pipenv
+        pipenv lock
         pipenv sync --dev
     - name: Rodar Testes Automáticos
       run: |
