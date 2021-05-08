@@ -19,6 +19,7 @@ jobs:
       run: |
         pip install pipenv
         pipenv lock
+        pipenv --python path/to/python
         pipenv sync --dev
     - name: Rodar Testes Automáticos
       run: |
