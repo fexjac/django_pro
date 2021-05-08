@@ -15,11 +15,11 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.6
+
     - name: Instalar Dependências
       run: |
         pip install pipenv
         pipenv lock
-        pipenv --python path/to/python
         pipenv sync --dev
     - name: Rodar Testes Automáticos
       run: |
